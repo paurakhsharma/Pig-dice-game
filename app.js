@@ -20,8 +20,6 @@ document.querySelector(".btn-roll").addEventListener('click', function() {
     if (dice !== 1) {
         roundScore += dice;
         document.querySelector('#current-' + activePlayer).textContent = roundScore;
-        diceDOM.style.display = 'none';
-
     } else {
         nextPlayer();
     }
